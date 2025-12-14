@@ -1,0 +1,55 @@
+{
+  "svelte.enable-ts-plugin": true,
+  "chat.mcp.gallery.enabled": true,
+  "workbench.colorTheme": "Monokai",
+  "python.analysis.typeCheckingMode": "basic",
+  "window.zoomLevel": -1,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // Vim leader mappings
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "Q"],
+      "commands": ["workbench.action.closeAllEditors"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.action.files.newUntitledFile"]
+    },
+    { "before": ["B"], "after": ["^"] },
+    {
+      "before": ["E"],
+      "after": ["$"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["B"], "after": ["^"] },
+    {
+      "before": ["E"],
+      "after": ["$"]
+    }
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
+}
