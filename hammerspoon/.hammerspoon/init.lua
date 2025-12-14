@@ -19,7 +19,7 @@ end)
 
 -- press command shift C to clean up files in Finder by date modified
 -- Define the shortcut but don't enable it globally yet
-local cleanUpHotkey = hs.hotkey.new({ "cmd", "shift" }, "C", function()
+local cleanUpHotkey = hs.hotkey.new({ "cmd", "shift" }, ",", function()
 	local finder = hs.appfinder.appFromName("Finder")
 	-- Select the menu item
 	hs.application.launchOrFocus("Finder")

@@ -74,6 +74,7 @@ alias ls="eza --icons=always"
 alias cd="z"
 alias woz="NVIM_APPNAME=nvim-kickstart nvim"
 alias reload="source ~/.zshrc"
+alias vim="nvim"
 
 # =============================================================================
 # 6. THEME & VISUALS (Bottom Load)
