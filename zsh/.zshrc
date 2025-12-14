@@ -75,6 +75,7 @@ alias cd="z"
 alias woz="NVIM_APPNAME=nvim-kickstart nvim"
 alias reload="source ~/.zshrc"
 alias vim="nvim"
+alias nvc="cd ~/.config/nvim/lua/ && nvim ."
 
 # =============================================================================
 # 6. THEME & VISUALS (Bottom Load)
