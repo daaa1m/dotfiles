@@ -72,9 +72,9 @@ chruby ruby-3.1.3
 # =============================================================================
 alias ls="eza --icons=always"
 alias cd="z"
-alias woz="NVIM_APPNAME=nvim-kickstart nvim"
 alias reload="source ~/.zshrc"
 alias vim="nvim"
+alias woz="nvim"
 alias nvc="cd ~/.config/nvim/lua/ && nvim ."
 
 # =============================================================================
