@@ -17,26 +17,6 @@ hs.hotkey.bind({}, "f9", function()
 	end
 end)
 
--- press command shift C to clean up files in Finder by date modified
--- Define the shortcut but don't enable it globally yet
-local cleanUpHotkey = hs.hotkey.new({ "cmd", "shift" }, ",", function()
-	local finder = hs.appfinder.appFromName("Finder")
-	-- Select the menu item
-	hs.application.launchOrFocus("Finder")
-	finder:selectMenuItem({ "View", "Clean Up By", "Date Modified" })
-end)
-
--- Create a filter so this ONLY works when Finder is the active window
-local finderFilter = hs.window.filter.new("Finder")
-
-finderFilter:subscribe(hs.window.filter.windowFocused, function()
-	cleanUpHotkey:enable()
-end)
-
-finderFilter:subscribe(hs.window.filter.windowUnfocused, function()
-	cleanUpHotkey:disable()
-end)
-
 -- apps shortcuts
 local appShortcuts = {
 	a = "Claude",
@@ -56,8 +36,8 @@ for key, app in pairs(appShortcuts) do
 	end)
 end
 
--- manual config reload: Hyper+Ks
-hs.hotkey.bind(hyper, "K", function()
+-- manual config reload: Hyper+h
+hs.hotkey.bind(hyper, "h", function()
 	hs.reload()
 end)
 hs.alert.show("Config loaded")
