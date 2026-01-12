@@ -51,5 +51,7 @@
   ],
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
-  }
+  },
+  "claudeCode.preferredLocation": "panel",
+  "extensions.ignoreRecommendations": true
 }

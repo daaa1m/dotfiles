@@ -26,7 +26,6 @@ local appShortcuts = {
 	o = "Obsidian",
 	s = "Mate Translate",
 	t = "kitty",
-	v = "VMWare Fusion",
 	w = "WhatsApp",
 }
 

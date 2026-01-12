@@ -10,8 +10,9 @@ return {
           },
           win = {
             preview = {
+              border = "double",
               wo = {
-                winbar = "%=👁 PREVIEW%=",
+                winbar = "%#WarningMsg#%=👁 PREVIEW MODE 👁%=",
               },
             },
           },

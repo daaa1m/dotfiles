@@ -77,3 +77,11 @@ alias nvc="cd ~/.config/nvim/lua/ && nvim ."
 # Fix dark comment colors (typeset -A prevents "invalid subscript" error)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='fg=cyan,bold'
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/da1m/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# opencode
+export PATH=/Users/da1m/.opencode/bin:$PATH
